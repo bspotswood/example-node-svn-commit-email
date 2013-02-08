@@ -17,10 +17,10 @@ Configuration:
 1. Install node.js and subversion if you have not already
 2. Place this script and the recipients.js script in a folder, preferably near your SVN repositories
 3. Open a command window to where you place the files and use npm to install coffee-script and nodemailer
-   a. npm install coffee-script
-   b. npm install 
+   * npm install coffee-script
+   * npm install 
 4. Edit the CONFIG below to make it match your email server settings, path to svnlook, etc
 5. Edit recipients.js to list your repositories, users, and which users get emails for which repos
 6. Create a post-commit script file in the "hooks" subfolder of your repositories that you want to use this
-   a. The script (or DOS batch file) should execute the coffee command with this script, the repo path, and revision as arguments
-   b. An example for Windows has been provided (post-commit.bat)
+   * The script (or DOS batch file) should execute the coffee command with this script, the repo path, and revision as arguments
+   * An example for Windows has been provided (post-commit.bat)
